@@ -8,25 +8,43 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1 class=""><span>Tomek</span><span>Zawadzki</span></h1>
-      <img class="h-screen w-screen" src="img/hero_face.png" />
-      <section class="bg-black">
-        <div>
+    <header class="relative flex h-screen w-screen flex-col">
+      <div
+        class="flex w-screen flex-row items-center justify-between bg-[#09090B] px-4 pt-6"
+      >
+        <h1 class="text-2xl leading-9">
+          <span class="text-[#EA580B]">Tomek</span
+          ><span class="text-[#FAFAFA]">Zawadzki</span>
+        </h1>
+        <nav class="">
           <img src="img/hamburger_icon.svg" />
-        </div>
-        <div>
-          <img src="img/instagram_icon.svg" />
-          <img src="img/github_icon.svg" />
-          <img src="img/twitter_icon.svg" />
-          <img src="img/discord_icon.svg" />
-          <img src="img/linkedin_icon.svg" />
-        </div>
-        <button>
-          <div>⬇</div>
-        </button>
-      </section>
-      <nav></nav>
+        </nav>
+      </div>
+
+      <div class="flex flex-row">
+        <img class="h-screen w-screen object-cover" src="img/hero_face.png" />
+
+        <section
+          class="absolute right-0 flex h-full w-12 flex-col items-center justify-end bg-[#09090B]"
+        >
+          <div class="hidden">
+            <span>Kontakt</span>
+          </div>
+          <div class="mb-6 space-y-4">
+            <img class="h-6 w-6" src="img/instagram_icon.svg" />
+            <img class="h-6 w-6" src="img/github_icon.svg" />
+            <img class="h-6 w-6" src="img/twitter_icon.svg" />
+            <img class="h-6 w-6" src="img/discord_icon.svg" />
+            <img class="h-6 w-6" src="img/linkedin_icon.svg" />
+          </div>
+        </section>
+      </div>
+
+      <button
+        class="absolute bottom-6 left-7 grid h-10 w-10 place-items-center rounded-full bg-[#F4F4F5]"
+      >
+        <div class="font-bold">↓</div>
+      </button>
     </header>
   </body>
 </html>
