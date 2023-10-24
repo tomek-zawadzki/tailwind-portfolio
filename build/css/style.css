@@ -665,6 +665,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -792,6 +796,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -816,10 +824,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-x-\[84px\] {
   -moz-column-gap: 84px;
        column-gap: 84px;
@@ -841,6 +845,27 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-\[\#D4D4D8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 216 / var(--tw-border-opacity));
 }
 
 .bg-\[\#09090B\] {
@@ -918,6 +943,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -976,6 +1009,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -1093,81 +1130,253 @@ video {
     left: 2rem;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:h-5 {
+    height: 1.25rem;
+  }
+
+  .md\:w-5 {
+    width: 1.25rem;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .md\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:text-\[64px\] {
+    font-size: 64px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width: 1400px) {
-  .xl\:left-16 {
-    left: 4rem;
+  .xl\:bottom-9 {
+    bottom: 2.25rem;
   }
 
   .xl\:left-11 {
     left: 2.75rem;
   }
 
+  .xl\:left-16 {
+    left: 4rem;
+  }
+
   .xl\:left-\[60px\] {
     left: 60px;
   }
 
-  .xl\:bottom-9 {
-    bottom: 2.25rem;
+  .xl\:bottom-2\/3 {
+    bottom: 66.666667%;
   }
 
-  .xl\:bottom-8 {
-    bottom: 2rem;
+  .xl\:bottom-1\/2 {
+    bottom: 50%;
   }
 
-  .xl\:right-14 {
-    right: 3.5rem;
+  .xl\:my-\[66px\] {
+    margin-top: 66px;
+    margin-bottom: 66px;
   }
 
   .xl\:ml-16 {
     margin-left: 4rem;
   }
 
-  .xl\:ml-11 {
-    margin-left: 2.75rem;
-  }
-
-  .xl\:ml-1 {
-    margin-left: 0.25rem;
+  .xl\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .xl\:flex {
     display: flex;
   }
 
+  .xl\:h-5 {
+    height: 1.25rem;
+  }
+
+  .xl\:h-6 {
+    height: 1.5rem;
+  }
+
+  .xl\:h-\[448px\] {
+    height: 448px;
+  }
+
+  .xl\:h-10 {
+    height: 2.5rem;
+  }
+
+  .xl\:h-16 {
+    height: 4rem;
+  }
+
+  .xl\:w-5 {
+    width: 1.25rem;
+  }
+
+  .xl\:w-6 {
+    width: 1.5rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-\[448px\] {
+    width: 448px;
+  }
+
+  .xl\:w-10 {
+    width: 2.5rem;
+  }
+
+  .xl\:w-16 {
+    width: 4rem;
+  }
+
   .xl\:min-w-\[160px\] {
     min-width: 160px;
   }
 
-  .xl\:flex-row {
-    flex-direction: row;
+  .xl\:max-w-full {
+    max-width: 100%;
   }
 
-  .xl\:items-center {
-    align-items: center;
+  .xl\:max-w-\[546px\] {
+    max-width: 546px;
   }
 
-  .xl\:gap-1 {
-    gap: 0.25rem;
+  .xl\:max-w-\[540px\] {
+    max-width: 540px;
+  }
+
+  .xl\:max-w-\[532px\] {
+    max-width: 532px;
+  }
+
+  .xl\:max-w-\[512px\] {
+    max-width: 512px;
+  }
+
+  .xl\:gap-32 {
+    gap: 8rem;
+  }
+
+  .xl\:gap-\[15px\] {
+    gap: 15px;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
   }
 
   .xl\:p-0 {
     padding: 0px;
   }
 
-  .xl\:pl-11 {
-    padding-left: 2.75rem;
+  .xl\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xl\:pb-9 {
+    padding-bottom: 2.25rem;
   }
 
   .xl\:pl-16 {
     padding-left: 4rem;
   }
 
-  .xl\:pb-9 {
-    padding-bottom: 2.25rem;
+  .xl\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .xl\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .xl\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .xl\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .xl\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:pb-\[120px\] {
+    padding-bottom: 120px;
+  }
+
+  .xl\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .xl\:text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
